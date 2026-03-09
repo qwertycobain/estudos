@@ -9,7 +9,9 @@ int main (){
     float area1;
     float pib1;
     int turisticos1;
+ 
 
+    
 
     char estado2[50]; 
     char code2[20];
@@ -18,7 +20,6 @@ int main (){
     float area2;
     float pib2;
     int turisticos2;
-
 
 
 
@@ -50,6 +51,8 @@ int main (){
 
     printf("carta 1 cadastrada com sucesso ! \n ");
 
+    float densidade1 = popular1/area1;
+    float pibpercapita1 = pib1/popular1;
 
     printf("cadastre a segunda carta\n");
     printf("nome do estado : \n");
@@ -79,6 +82,10 @@ int main (){
     printf("digite o numero de pontos turisticos: ");
     scanf("%d", &turisticos2);
 
+    float densidade2 = popular2/area2;
+    float pibpercapita2 = pib2/popular2;
+
+
     printf("\n-------------------------\n");
     printf("Carta 1\n");
     printf("Estado: %s\n", estado1);
@@ -88,6 +95,9 @@ int main (){
     printf("Area: %.2f km\n", area1);
     printf("PIB: %.2f bilhoes\n", pib1);
     printf("Pontos turisticos: %d\n", turisticos1);
+    printf("A Densidade eh:, %.2f\n", densidade1);
+    printf("O PIB percapita eh:, %.2f\n", pibpercapita1);
+
 
     printf("\n-------------------------\n");
     printf("Carta 2\n");
@@ -98,5 +108,6 @@ int main (){
     printf("Area: %.2f km\n", area2);
     printf("PIB: %.2f bilhoes\n", pib2);
     printf("Pontos turisticos: %d\n", turisticos2);
-
+    printf("a densidade eh, %.2f\n", densidade2);
+    printf("O PIB percapita eh:, %.2f\n", pibpercapita2);
 }
